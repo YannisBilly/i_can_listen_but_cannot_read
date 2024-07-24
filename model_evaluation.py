@@ -222,7 +222,7 @@ elif args.experiment == 'generate_figures':
     plt.ylabel('Probability')
     plt.legend()
     plt.grid(True)
-    plt.savefig(f'muscall_prompt_histogram_of_similarities.png')
+    plt.savefig(f'evaluation_output/figures/muscall_prompt_histogram_of_similarities.png')
     plt.close()
 
 
@@ -283,7 +283,7 @@ elif args.experiment == 'generate_figures':
 
     plt.figtext(0.01, 0.5, 'Probability', va='center', rotation='vertical', fontsize = 13)
     plt.subplots_adjust(left=0.11, right=0.97, top=0.9, bottom=0.13)
-    plt.savefig(f'muscall_prompt_histogram_of_positive_v_negative_similarities_subplot.png')
+    plt.savefig(f'evaluation_output/figures/muscall_prompt_histogram_of_positive_v_negative_similarities_subplot.png')
     plt.close()
 
 
@@ -352,7 +352,7 @@ elif args.experiment == 'generate_figures':
         plt.figtext(0.01, 0.5, 'Probability', va='center', rotation='vertical', fontsize = 13)
         plt.subplots_adjust(left=0.11, right=0.97, top=0.9, bottom=0.13)
 
-        plt.savefig(f'audio_only_positive_negative_{space_type}.png')
+        plt.savefig(f'evaluation_output/figures/audio_only_positive_negative_{space_type}.png')
         plt.close()
 
     # top-2 confidence
@@ -399,7 +399,7 @@ elif args.experiment == 'generate_figures':
     plt.figtext(0.01, 0.5, 'Probability', va='center', rotation='vertical', fontsize=13)
     plt.subplots_adjust(left=0.11, right=0.97, top=0.9, bottom=0.13)
 
-    plt.savefig(f'muscall_prompt_histogram_of_positive_v_negative_similarities_subplot.png')
+    plt.savefig(f'evaluation_output/figures/muscall_prompt_histogram_of_positive_v_negative_similarities_subplot.png')
     plt.close()
 
 
