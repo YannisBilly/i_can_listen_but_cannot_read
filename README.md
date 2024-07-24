@@ -50,7 +50,18 @@ python embeddings_generations.py
 ```
 
 ### Evaluation
-Evaluate the embeddings obtained from the models with a similarity function of your choice. We used cosine similarity.
+Evaluate the embeddings obtained from the models using model_evaluation.py
+
+There are 4 choices
+1. Pre-joint Doktorski similarity - pre_joint_doktorski_similarity
+2. Joint Doktorski similarity - joint_doktorski_similarity
+3. Zeroshot with different prompts - zeroshot_baseline
+4. Misc. Negative sensitivity checking (wasn't included in the paper) - positive_negative_pronmpts
+
+Use the options (\<flag\>) after the dash in the aforementioned list in:
+```
+python model_evaluation.py --experiment <flag>
+```
 
 ## Citation
 
