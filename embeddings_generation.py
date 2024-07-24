@@ -212,7 +212,7 @@ elif parser.model == 'music_speech_laion_clap':
 
 model_wrapper = multimodal_system(model, device=device)
 
-path_to_save = 'model_evaluation/'
+path_to_save = 'model_embeddings/'
 if not(os.path.exists(path_to_save)):
     os.mkdir(path_to_save)
 
